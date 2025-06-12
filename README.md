@@ -9,7 +9,7 @@ Bu proje, elektrikli araçların şebeke ile etkileşimini simüle etmek amacıy
 
 Proje, araçların batarya durumlarına, enerji fiyatlarına ve saatlik enerji taleplerine göre karar verme algoritması ile çalışmaktadır. Ayrıca MQTT protokolü ile haberleşme sağlanmakta ve simülasyon sonuçları XML olarak kaydedilip görselleştirilmektedir.
 
-⚙️ Kullanılan Teknolojiler ve Yapılar
+Kullanılan Teknolojiler ve Yapılar
 
 SUMO: Gerçek zamanlı trafik simülasyonu
 
@@ -21,7 +21,7 @@ EMS Decision Model: Zaman-serili şarj/deşarj komutları
 
 Tkinter GUI: Simülasyonu başlatmak ve sonuçları göstermek için kullanıcı arayüzü
 
-📂 Proje İçeriği
+Proje İçeriği
 
 
 
@@ -35,7 +35,7 @@ Tkinter GUI: Simülasyonu başlatmak ve sonuçları göstermek için kullanıcı
 ├── sonuclar.xml            # Simülasyon sonuçları (oluşur)
 
 
-📊 Özellikler
+Özellikler
 Zaman bazlı enerji fiyatlandırması
 
 Akıllı EMS karar sistemi (charge / discharge / idle)
@@ -46,7 +46,7 @@ Optimizasyon destekli enerji tahsisi
 
 Gerçek zamanlı simülasyon görselleştirmesi
 
-👥 Geliştirici Notu
+Geliştirici Notu
 
 
 Bu proje, Eskişehir Osmangazi Üniversitesi bünyesinde gerçekleştirilmiş bir araştırma çalışmasıdır ve geleceğin akıllı şebeke altyapıları için temel bir örnek teşkil etmektedir.
