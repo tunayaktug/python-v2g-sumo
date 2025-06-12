@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-25 21:44:54.810964 by osmWebWizard.py UNKNOWN
+<configuration>
+    <net-file value="D:\sumo\bin\2025-04-25-21-44-39\osm.net.xml.gz"/>
+    <output-trip-file value="D:\sumo\bin\2025-04-25-21-44-39\osm.passenger.trips.xml"/>
+    <route-file value="D:\sumo\bin\2025-04-25-21-44-39\osm.passenger.rou.xml"/>
+    <prefix value="veh"/>
+    <trip-attributes value="departLane=&quot;best&quot;"/>
+    <fringe-start-attributes value="departSpeed=&quot;max&quot;"/>
+    <vehicle-class value="passenger"/>
+    <lanes value="True"/>
+    <fringe-factor value="5"/>
+    <allow-fringe.min-length value="1000.0"/>
+    <via-edge-types value="highway.motorway,highway.motorway_link,highway.trunk_link,highway.primary_link,highway.secondary_link,highway.tertiary_link"/>
+    <min-distance value="300.0"/>
+    <min-distance.fringe value="10.0"/>
+    <remove-loops value="True"/>
+    <validate value="True"/>
+    <insertion-density value="12.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-04-25 21:44:54 by Eclipse SUMO duarouter Version 3984794750
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\sumo\bin\2025-04-25-21-44-39\osm.net.xml.gz"/>
+        <route-files value="D:\sumo\bin\2025-04-25-21-44-39\osm.passenger.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="D:\sumo\bin\2025-04-25-21-44-39\osm.passenger.trips.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <processing>
+        <remove-loops value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="3600.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="veh_passenger" vClass="passenger"/>
+    <trip id="veh0" type="electric_passenger" depart="0.00" departLane="best" from="-368620842#13" to="-137945407"/>
+    <trip id="veh2" type="electric_passenger" depart="14.75" departLane="best" from="369628890#0" to="369628890#11"/>
+    <trip id="veh3" type="electric_passenger" depart="22.12" departLane="best" from="-605647262#0" to="-212712097#22"/>
+    <trip id="veh4" type="electric_passenger" depart="29.50" departLane="best" from="212712095#8" to="-137945407"/>
+    <trip id="veh5" type="electric_passenger" depart="36.87" departLane="best" from="-368611134#5" to="-212712115#2"/>
+</routes>
+

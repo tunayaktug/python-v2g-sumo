@@ -1,0 +1,14 @@
+<routes>
+    <vType id="circle_electric_passenger" vClass="passenger" color="1,0,0">
+        <param key="device.battery.capacity" value="50"/>
+        <param key="device.battery.initialCharge" value="45"/>
+        <param key="device.battery.maximumPower" value="22"/>
+        <param key="device.battery.energyConsumed" value="0.2"/>
+        <param key="has.battery.device" value="true"/>
+    </vType>
+
+    <!-- A → B → A rotası -->
+    <route id="circleRoute" edges="-368620842#13 -137945407 137945407 368620842#13" />
+
+    <vehicle id="Arac1" type="electric_passenger" route="circleRoute" depart="0" departLane="best"/>
+</routes>

@@ -1,0 +1,8 @@
+<net version="1.7">
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,500.00,500.00" origBoundary="0.00,0.00,500.00,500.00" projParameter="!"/>
+    <edge id="1" from="n1" to="n2" priority="1">
+        <lane id="1_0" index="0" speed="13.9" length="500.0" />
+    </edge>
+    <junction id="n1" x="0.00" y="0.00" type="priority"/>
+    <junction id="n2" x="500.00" y="0.00" type="priority"/>
+</net>

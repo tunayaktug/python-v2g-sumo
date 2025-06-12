@@ -1,0 +1,9 @@
+<additional>
+    <vType id="electric_passenger" vClass="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="13.9">
+        <param key="device.battery.capacity" value="50"/> <!-- kWh -->
+        <param key="device.battery.initialCharge" value="45"/>
+        <param key="device.battery.maximumPower" value="22"/>
+        <param key="device.battery.energyConsumed" value="0.2"/>
+        <param key="has.battery.device" value="true"/>  <!-- BU SATIRI EKLE -->
+    </vType>
+</additional>
