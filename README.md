@@ -1,52 +1,49 @@
 # V2Gsumo
-V2G (Vehicle-to-Grid) sistemleri için SUMO tabanlı bir simülasyon ve enerji yönetim sistemi modeli – şarj/deşarj optimizasyonu ve EMS karar desteği içerir.
+A SUMO-based simulation and energy management system model for V2G (Vehicle-to-Grid) systems – includes charge/discharge optimization and EMS decision support.
 
 
 
-Proje Hakkında
+## 🚗 Overview
+This project simulates **Vehicle-to-Grid (V2G)** interactions using the **SUMO** traffic simulator integrated with a custom-developed **Energy Management System (EMS)**. Electric vehicles (EVs) communicate with a centralized EMS via **MQTT**, receiving commands to charge or discharge based on battery status, time-of-day electricity prices, and energy demand.
 
-Bu proje, elektrikli araçların şebeke ile etkileşimini simüle etmek amacıyla geliştirilmiş bir V2G (Vehicle-to-Grid) sistem modelidir. SUMO (Simulation of Urban MObility) platformu kullanılarak trafik ve enerji etkileşimleri modellenmiş, bir EMS (Energy Management System) tarafından araçlara şarj/deşarj komutları verilmiştir.
+An intuitive **Tkinter-based GUI** is used to start the simulation and display real-time results from the generated XML logs. The system incorporates optimization logic and environmental impact metrics (e.g., CO₂ savings).
 
-Proje, araçların batarya durumlarına, enerji fiyatlarına ve saatlik enerji taleplerine göre karar verme algoritması ile çalışmaktadır. Ayrıca MQTT protokolü ile haberleşme sağlanmakta ve simülasyon sonuçları XML olarak kaydedilip görselleştirilmektedir.
+## 🔧 Core Technologies
+- 🛣️ **SUMO** (Simulation of Urban MObility) for traffic modeling
+- ⚡ **EMS Logic** (`ems_decision.py`) – decision engine based on SoC, price, demand
+- 🧠 **Optimization** – using linear programming (`scipy.optimize.linprog`)
+- 🛰️ **MQTT** (HiveMQ) for real-time message exchange
+- 📊 **Tkinter GUI** for running and visualizing simulations
+- 📈 **Matplotlib & Pandas** for analysis and graphing
 
-Kullanılan Teknolojiler ve Yapılar
-
-SUMO: Gerçek zamanlı trafik simülasyonu
-
-Python: Kontrol ve analiz kodları
-
-MQTT (HiveMQ): Haberleşme protokolü
-
-EMS Decision Model: Zaman-serili şarj/deşarj komutları
-
-Tkinter GUI: Simülasyonu başlatmak ve sonuçları göstermek için kullanıcı arayüzü
-
-Proje İçeriği
-
-
-
-├── arayuz.py               # Kullanıcı arayüzü (simülasyonu başlatır)
-├── deneme.py               # Ana simülasyon yürütücüsü
-├── ems_decision.py         # EMS karar algoritması
-├── ems_trip_analysis.py    # Araç park süreleri analizi
-├── ems_v2g_analysis.py     # Simülasyon sonucu analiz
-├── ems_v2g_optimization.py # Enerji optimizasyonu
-├── *.xml                   # SUMO ağ, araç ve rota tanımları
-├── sonuclar.xml            # Simülasyon sonuçları (oluşur)
+## 📂 File Structure
+├── arayuz.py # GUI: Start sim + show results
+├── deneme.py # Main simulation logic
+├── ems_decision.py # EMS: charge/discharge decisions
+├── ems_v2g_analysis.py # Analysis of V2G performance
+├── ems_trip_analysis.py # Vehicle trip and parking durations
+├── ems_v2g_optimization.py # Optimization for energy distribution
+├── *.xml # SUMO network, route, vehicle & grid configs
+├── sonuclar.xml # Generated simulation results (XML)
 
 
-Özellikler
-Zaman bazlı enerji fiyatlandırması
 
-Akıllı EMS karar sistemi (charge / discharge / idle)
+## 📊 Simulation Features
+- Time-based electricity price profile
+- SoC-class-based decision rules (critical, low, medium, high)
+- Bidirectional energy flow: grid ↔ vehicle
+- Environmental metrics: total V2G energy, avoided CO₂ (kg)
+- Dynamic visualization of SoC and profit in simulation runtime
 
-CO₂ salınımı önleme ve kâr hesaplamaları
+## 📊 Sample Output (Graph)
+- Vehicle SoC (%) over simulation time
+- Optimized charge/discharge distribution by hour
+- CO₂ savings and total profit annotation on plot
 
-Optimizasyon destekli enerji tahsisi
-
-Gerçek zamanlı simülasyon görselleştirmesi
-
-Geliştirici Notu
+## 👥 Developer Note
+This work is developed under the academic scope of **Eskişehir Osmangazi University** and aims to demonstrate smart grid readiness with intelligent EV-grid coordination systems.
 
 
-Bu proje, Eskişehir Osmangazi Üniversitesi bünyesinde gerçekleştirilmiş bir araştırma çalışmasıdır ve geleceğin akıllı şebeke altyapıları için temel bir örnek teşkil etmektedir.
+
+
+
