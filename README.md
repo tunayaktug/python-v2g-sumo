@@ -110,7 +110,7 @@ At each simulation step, the EV:
 | ...           | ...                 | ...          |
 
 **Diagram:**  
-![DFA](screenshots/sumo_dfa.png)
+![DFA](ScreenShots/sumo_dfa.png)
 
 ### CFG: Grammar-Based Decision Logic
 
@@ -151,52 +151,56 @@ These outcomes demonstrate that:
 ##  Simulation Outputs
 
 ### 1. Simulation Start – EV enters route  
-![Route Start](screenshots/sumo_giris.png)
-
+![Route Start](ScreenShots/sumo_giris.png)
+At the beginning of the simulation, an electric vehicle is observed entering the campus road on a predefined route. The vehicle's behavior and its interactions with traffic are dynamically analyzed within this environment.
 ---
 
 ### 2. EMS Decision Example – Discharging  
-![Discharge Action](screenshots/sumo_discharging.png)
+![Discharge Action](ScreenShots/sumo_discharging.png)
 
 ---
 
 ### 3. EMS Decision Example – Charging  
-![Charge Action](screenshots/sumo_charging.png)
+![Charge Action](ScreenShots/sumo_charging.png)
 
 ---
 
 ### 4. SoC Change Over Time  
 Graph shows vehicle battery charging/discharging dynamics with profit and CO₂ savings.
 
-![SoC Graph](screenshots/sumo_graphic.png)
+![SoC Graph](ScreenShots/sumo_graphic.png)
 
+The graph illustrates the change in the battery State of Charge (SoC) of an electric vehicle throughout the simulation. The vehicle discharges energy to the grid during specific time intervals and later recharges. As a result of these cycles, a total profit of 1.50 TL was achieved and 4.42 kg of CO₂ emissions were prevented.
 ---
 
 ### 5. DFA Diagram  
 The state transitions between Idle, Charging, and Discharging modeled using DFA.
 
-![DFA](screenshots/sumo_dfa.png)
+![DFA](ScreenShots/sumo_dfa.png)
 
+A Deterministic Finite Automaton (DFA) diagram illustrating the different operating states of the battery management system and the transitions between them based on commands.
 ---
 
 ### 6. CFG Decision Table (Optional Visualization)  
 Table showing CFG rule-based decision making for different SoC, price, and demand combinations.
 
-![CFG Table](screenshots/sumo_cfg.png)
+![CFG Table](ScreenShots/sumo_cfg.png)
 
+This table shows the CFG decisions of the system based on different SoC (State of Charge), price, and demand scenarios. Each row represents the action (charging, discharging, or no action) corresponding to a specific combination of conditions.
 ---
 
 ### 7. Charging Station View  
 A detailed image from SUMO GUI where EV is located at the charging lane.
 
-![Charging Station](screenshots/sumo_chargestation.png)
+![Charging Station](ScreenShots/sumo_chargestation.png)
 
+Entry of the electric vehicle into the route in the SUMO simulation environment
 ---
 
 ### 8. Real-world Map of ESOGÜ Campus  
 SUMO map imported from OpenStreetMap for Eskişehir Osmangazi University.
 
-![ESOGÜ Campus](screenshots/sumo_esogu.png)
+![ESOGÜ Campus](ScreenShots/sumo_esogu.png)
 
 
 ---
