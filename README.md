@@ -2,7 +2,7 @@
 
 This project presents a simulation framework for analyzing the feasibility and efficiency of Vehicle-to-Grid (V2G) technology in a university campus environment using the **SUMO** mobility simulator and formal modeling approaches including **Deterministic Finite Automata (DFA)** and **Context-Free Grammar (CFG)**. 
 
-Developed as part of the *Formal Languages and Automata* course, the project simulates electric vehicle (EV) behaviors — such as charging, discharging, and idle — in response to electricity prices, battery State of Charge (SoC), and grid demand, providing a real-time decision-making energy management system (EMS).
+Developed as part of the *Formal Languages and Automata* course, the project simulates electric vehicle (EV) behaviors  such as charging, discharging, and idle in response to electricity prices, battery State of Charge (SoC), and grid demand, providing a real-time decision-making energy management system (EMS).
 
 ---
 
@@ -31,7 +31,7 @@ The transportation infrastructure within the Eskişehir Osmangazi University (ES
 
 ###  Formal Modeling of Energy States
 
-In the proposed V2G system, different energy modes of vehicles — charging, discharging (to grid), and idle — are modeled using formal language concepts:
+In the proposed V2G system, different energy modes of vehicles charging, discharging (to grid), and idle are modeled using formal language concepts:
 
 - **Deterministic Finite Automaton (DFA)** is used to define clear state transitions, such as:
   - When a vehicle reaches 70% SoC while charging, it may transition to discharging mode.
